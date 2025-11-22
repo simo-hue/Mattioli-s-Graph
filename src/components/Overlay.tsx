@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { GraphNode } from '@/data/graphData';
 import Link from 'next/link';
-import { X, ExternalLink, BookOpen, Code, Heart, Brain, Share2 } from 'lucide-react';
+import { X, ExternalLink, BookOpen, Code, Heart, Brain, Share2, Sparkles } from 'lucide-react';
 
 interface OverlayProps {
     node: GraphNode | null;
@@ -12,10 +12,11 @@ interface OverlayProps {
 
 const getIcon = (type: string) => {
     switch (type) {
-        case 'me': return <Heart className="w-6 h-6 text-pink-400" />;
-        case 'passion': return <Heart className="w-6 h-6 text-orange-400" />;
-        case 'book': return <BookOpen className="w-6 h-6 text-cyan-400" />;
-        case 'project': return <Code className="w-6 h-6 text-green-400" />;
+        case 'me': return <Heart className="w-6 h-6 text-white" />;
+        case 'passion': return <Heart className="w-6 h-6 text-neon-green" />;
+        case 'experience': return <Sparkles className="w-6 h-6 text-white" />; // White sparkles for bubbles
+        case 'book': return <BookOpen className="w-6 h-6 text-neon-cyan" />;
+        case 'project': return <Code className="w-6 h-6 text-neon-green" />;
         case 'tech-project': return <Code className="w-6 h-6 text-purple-400" />;
         case 'thought': return <Brain className="w-6 h-6 text-yellow-400" />;
         default: return <div className="w-6 h-6 bg-gray-400 rounded-full" />;

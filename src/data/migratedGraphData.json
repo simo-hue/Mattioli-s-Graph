@@ -1,0 +1,638 @@
+{
+  "nodes": [
+    {
+      "id": "thought-relationship",
+      "name": "Relationship Importance",
+      "type": "thought",
+      "val": 10,
+      "desc": "\n Friendship and Love\n\nHuman relationships are the fundamental pillar of our existence, it is no co...",
+      "img": "/migrated/thought-relationship.png",
+      "link": "thought-relationship"
+    },
+    {
+      "id": "thought-alone",
+      "name": "The importance of being able to stay alone",
+      "type": "thought",
+      "val": 10,
+      "desc": "Knowing how to be alone is an often underestimated skill, but it is incredibly important for our per...",
+      "img": "/migrated/thought-alone.png",
+      "link": "thought-alone"
+    },
+    {
+      "id": "thought-repetition",
+      "name": "repetition is the mother of all skills",
+      "type": "thought",
+      "val": 10,
+      "desc": "\nThere’s a timeless truth in the saying, “Repetition is the mother of all skills.” It’s something ...",
+      "img": "/migrated/thought-repetition.png",
+      "link": "thought-repetition"
+    },
+    {
+      "id": "thought-trap",
+      "name": "The 20th century Trap",
+      "type": "thought",
+      "val": 10,
+      "desc": "\n Detached from stimuli\n\nWe live in an age of constant stimulation, a constant flow of notification...",
+      "img": "/migrated/thought-trap.jpg",
+      "link": "thought-trap"
+    },
+    {
+      "id": "thought-ignorance-today",
+      "name": "ignorance nowadays is a choice",
+      "type": "thought",
+      "val": 10,
+      "desc": "\nIn the past, access to knowledge was a privilege. Books were scarce, universities were reserved for...",
+      "img": "/migrated/thought-ignorance-today.png",
+      "link": "thought-ignorance-today"
+    },
+    {
+      "id": "thought-humility",
+      "name": "Don't Brag",
+      "type": "thought",
+      "val": 10,
+      "desc": "\n The importance of humility, but without losing self-confidence\n\nHumility is one of the most appre...",
+      "img": "/migrated/thought-humility.png",
+      "link": "thought-humility"
+    },
+    {
+      "id": "thought-love",
+      "name": "Spread Love wherever you go",
+      "type": "thought",
+      "val": 10,
+      "desc": "Kindness is one of those little gestures that make days brighter, both for the giver and the receive...",
+      "img": "/migrated/thought-love.png",
+      "link": "thought-love"
+    },
+    {
+      "id": "thought-gratitude",
+      "name": "Life Appreciation",
+      "type": "thought",
+      "val": 10,
+      "desc": "\nWe often live in a rush, projected towards new goals and expectations. In this vortex, we can take ...",
+      "img": "/migrated/thought-gratitude.jpeg",
+      "link": "thought-gratitude"
+    },
+    {
+      "id": "thought-history",
+      "name": "History importance",
+      "type": "thought",
+      "val": 10,
+      "desc": " My Journey from Hater to Curious\n\nI admit that history was my nemesis during my school years. When...",
+      "img": "/migrated/thought-history.png",
+      "link": "thought-history"
+    },
+    {
+      "id": "publication-llm-tourism-mobility-predictor",
+      "name": "LLM Tourism Mobility Predictor: An Open-Source HPC-Accelerated Framework for Tourism Flow Prediction",
+      "type": "publication",
+      "val": 10,
+      "desc": "Research paper on an innovative open-source framework combining Large Language Models with High-Performance Computing for predicting tourism mobility patterns using A100 GPUs",
+      "img": "/migrated/publication-llm-tourism-mobility-predictor.jpg",
+      "link": "publication-llm-tourism-mobility-predictor"
+    },
+    {
+      "id": "tech-project-youtube-video-localization-script",
+      "name": "Automazione Traduzione Contenuti YouTube",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Script Python avanzato per traduzione automatica di video YouTube: titoli, descrizioni e sottotitoli in 130+ lingue. Integrazione YouTube Data API v3 e Google OAuth 2.0 per content creators e aziende.",
+      "img": "/migrated/tech-project-youtube-video-localization-script.png",
+      "link": "tech-project-youtube-video-localization-script"
+    },
+    {
+      "id": "thought-cassioli",
+      "name": "Daniele Cassioli",
+      "type": "thought",
+      "val": 10,
+      "desc": "I had the privilege of meeting Daniele Cassioli, and I can say that it was a deeply enriching experi...",
+      "img": "/migrated/thought-cassioli.png",
+      "link": "thought-cassioli"
+    },
+    {
+      "id": "tech-project-textconverter-pro",
+      "name": "TextConverter Pro",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Applicazione nativa macOS per conversioni testo istantanee con shortcut globali. Zero context switch, <100ms response time, integrazione con 500+ app. Tool di produttività per developers e content creators.",
+      "img": "/migrated/tech-project-textconverter-pro.png",
+      "link": "tech-project-textconverter-pro"
+    },
+    {
+      "id": "tech-project-network-programming-security-course",
+      "name": "Corso Programmazione e Sicurezza delle Reti - Materiale Didattico Open Source",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Raccolta completa di materiali didattici per il corso di Programmazione e Sicurezza delle Reti di UniVR. Codice pratico, documentazione e risorse per la comunità studentesca. Risultato: 30 e Lode.",
+      "img": "/migrated/tech-project-network-programming-security-course.png",
+      "link": "tech-project-network-programming-security-course"
+    },
+    {
+      "id": "tech-project-programming-languages-implementation",
+      "name": "MyLang - Implementazione Completa di un Linguaggio di Programmazione",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Implementazione da zero di un linguaggio di programmazione interpretato usando Java e ANTLR4. Progetto completo per il corso di Linguaggi di Programmazione UniVR con lexer, parser, interpreter e supporto Brainfuck.",
+      "img": "/migrated/tech-project-programming-languages-implementation.png",
+      "link": "tech-project-programming-languages-implementation"
+    },
+    {
+      "id": "tech-project-java-car-configurator",
+      "name": "Configuratore Auto Java - Architettura MVC e Design Patterns",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Configuratore di prodotto modulare sviluppato in Java con JavaFX per esame di Programmazione 2 UniVR. Implementazione MVC, design patterns avanzati, interfaccia grafica e architettura estendibile per configurazione automobili.",
+      "img": "/migrated/tech-project-java-car-configurator.png",
+      "link": "tech-project-java-car-configurator"
+    },
+    {
+      "id": "tech-project-epicure-hackathon-2024",
+      "name": "EPICURE Hackathon GPU - October 2024",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "GPU Programming and High-Performance Computing Hackathon hosted by EPICURE and CINECA",
+      "img": "/migrated/tech-project-epicure-hackathon-2024.jpg",
+      "link": "tech-project-epicure-hackathon-2024"
+    },
+    {
+      "id": "tech-project-rabbi-ebike-management-system",
+      "name": "Rabbi E-Bike Management System - Sistema Completo per Noleggio E-Bike",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Un sistema di gestione professionale per negozi di noleggio e-bike, sviluppato con React e TypeScript. Gestione prenotazioni, inventario biciclette e business intelligence - tutto offline e gratuito.",
+      "img": "/migrated/tech-project-rabbi-ebike-management-system.png",
+      "link": "tech-project-rabbi-ebike-management-system"
+    },
+    {
+      "id": "thought-degree",
+      "name": "Bachelor Degree...whats'next?",
+      "type": "thought",
+      "val": 10,
+      "desc": "A question that has been there for years",
+      "img": "/migrated/thought-degree.png",
+      "link": "thought-degree"
+    },
+    {
+      "id": "tech-project-ethereum-smart-contract-points",
+      "name": "Smart Contract Ethereum per Sistema Raccolta Punti - DApp Completa",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Implementazione completa di uno smart contract Ethereum per sistema di raccolta punti. Progetto universitario con Solidity, Truffle Framework, React frontend e deployment su blockchain. Studio pratico di DeFi e Web3.",
+      "img": "/migrated/tech-project-ethereum-smart-contract-points.png",
+      "link": "tech-project-ethereum-smart-contract-points"
+    },
+    {
+      "id": "tech-project-ciacola-bot",
+      "name": "VecioBot - Telegram Bot in Dialetto Trentino",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "Un bot Telegram che conversa in autentico dialetto trentino, simulando un nonno virtuale della montagna usando LLaMA 3 e Ollama",
+      "img": "/migrated/tech-project-ciacola-bot.jpg",
+      "link": "tech-project-ciacola-bot"
+    },
+    {
+      "id": "thought-trap",
+      "name": "Impostor Syndrome OR Ignorance?",
+      "type": "thought",
+      "val": 10,
+      "desc": "\nFirstly read carfully this Definition Section\n\n---\n\n Definitions\n\n Impostor Sindrome\nLa sindro...",
+      "img": "/migrated/thought-trap.png",
+      "link": "thought-trap"
+    },
+    {
+      "id": "project-home",
+      "name": "Simo's Online & Digital Diary",
+      "type": "project",
+      "val": 10,
+      "desc": "What's the aim of this project?",
+      "img": "/migrated/project-home.jpeg",
+      "link": "project-home"
+    },
+    {
+      "id": "project-mountain-fauna-lover",
+      "name": "Mountain Fauna Lover",
+      "type": "project",
+      "val": 10,
+      "desc": "A brief description of Mountain Fauna Lover presence on Social media Platforms",
+      "img": "/migrated/project-mountain-fauna-lover.jpg",
+      "link": "project-mountain-fauna-lover"
+    },
+    {
+      "id": "project-think",
+      "name": "CLab UNIRv",
+      "type": "project",
+      "val": 10,
+      "desc": "\n 🚀 Redevelopment of the Rocca di Nogarole: Our Journey with CLab Verona\n\nThe journey of the Con...",
+      "img": "/migrated/project-think.JPG",
+      "link": "project-think"
+    },
+    {
+      "id": "books-think",
+      "name": "think and grow rich | Napoleon Hill",
+      "type": "book",
+      "val": 10,
+      "desc": "\n Introduction to Napoleon Hill's Philosophy of Success\nThink and Grow Rich by Napoleon Hill is ...",
+      "img": "/migrated/books-think.png",
+      "link": "books-think"
+    },
+    {
+      "id": "books-cassioli-ventro-contro",
+      "name": "insegna al cuore a vedere | Daniele Cassioli",
+      "type": "book",
+      "val": 10,
+      "desc": " COMMING SOON, Still Reading\n...",
+      "img": "/migrated/books-cassioli-ventro-contro.png",
+      "link": "books-cassioli-ventro-contro"
+    },
+    {
+      "id": "books-cassioli-cuore-a-vedere",
+      "name": "il vento contro | Daniele Cassioli",
+      "type": "book",
+      "val": 10,
+      "desc": "\n Introduction, The Power to Transform Adversity into Opportunity\nIl Vento Contro by Daniele Cas...",
+      "img": "/migrated/books-cassioli-cuore-a-vedere.png",
+      "link": "books-cassioli-cuore-a-vedere"
+    },
+    {
+      "id": "books-grow-rich",
+      "name": "Rich and Poor Dad | Robert Kiyosaki",
+      "type": "book",
+      "val": 10,
+      "desc": "\n Rich Dad Poor Dad: Personal Finance for Everyone?\n\n Introduction\nRich Dad Poor Dad by Robert ...",
+      "img": "/migrated/books-grow-rich.png",
+      "link": "books-grow-rich"
+    },
+    {
+      "id": "books-gratteri",
+      "name": "il grifone | Nicola Gratteri",
+      "type": "book",
+      "val": 10,
+      "desc": "\n Introduction\nIl Grifone, written by Nicola Gratteri, is a work that goes beyond the simple nar...",
+      "img": "/migrated/books-gratteri.png",
+      "link": "books-gratteri"
+    },
+    {
+      "id": "books-bias-cognitivi",
+      "name": "guida ai bias cognitivi, Capire le Trappole della Mente | Raffaele Gaito",
+      "type": "book",
+      "val": 10,
+      "desc": " Introduction\nThe Cognitive Bias Guide is a book that helps us discover and understand the mecha...",
+      "img": "/migrated/books-bias-cognitivi.png",
+      "link": "books-bias-cognitivi"
+    },
+    {
+      "id": "books-mente-guadagna",
+      "name": "Guadagna con la mente | Andrea Maurizio Gilardoni",
+      "type": "book",
+      "val": 10,
+      "desc": "\n COMMING SOON, Still Reading\n...",
+      "img": "/migrated/books-mente-guadagna.png",
+      "link": "books-mente-guadagna"
+    },
+    {
+      "id": "books-pensieri-lenti-pensieri-veloci",
+      "name": "Pensieri lenti pensieri veloci",
+      "type": "book",
+      "val": 10,
+      "desc": "\n COMMING SOON, Still Reading...",
+      "img": "/migrated/books-pensieri-lenti-pensieri-veloci.png",
+      "link": "books-pensieri-lenti-pensieri-veloci"
+    },
+    {
+      "id": "books-machina-sapiens",
+      "name": "Machina Sapiens | Nello Cristianini",
+      "type": "book",
+      "val": 10,
+      "desc": " Reflections on a Visionary Book\n\nI recently finished reading the book \"Machina Sapiens\" by Nel...",
+      "img": "/migrated/books-machina-sapiens.png",
+      "link": "books-machina-sapiens"
+    },
+    {
+      "id": "books-atomic-habits",
+      "name": "Atomic Habits | James Clear",
+      "type": "book",
+      "val": 10,
+      "desc": " Introduction\n\"Atomic Habits\" by James Clear is an enlightening book that addresses the importance...",
+      "img": "/migrated/books-atomic-habits.png",
+      "link": "books-atomic-habits"
+    },
+    {
+      "id": "tech-project-lobable-vibe-coding",
+      "name": "Primo Hackathon Lovable Vibe Conding In Italia",
+      "type": "tech-project",
+      "val": 10,
+      "desc": "6 Ore per Costruire l'Impossibile",
+      "img": "/migrated/tech-project-lobable-vibe-coding.jpg",
+      "link": "tech-project-lobable-vibe-coding"
+    },
+    {
+      "id": "experience-frassino",
+      "name": "Birdwatching Experience with SWAROVSKI OPTIK at Le Ali del Frassino Residence (Lake Frassino)",
+      "type": "passion",
+      "val": 10,
+      "desc": "An awesome private event I was invited to, thanks to my long-standing collaboration with SWAROVSKI OPTIK through the Mountain Fauna Lover project.",
+      "img": "/migrated/experience-frassino.png",
+      "link": "experience-frassino"
+    },
+    {
+      "id": "experience-sicily",
+      "name": "NO MAFIA Sicily Tour",
+      "type": "passion",
+      "val": 10,
+      "desc": "I spent 7 days in the magnific Sicily, in Italy visiting the most important places and meeting testimonials of the mafia period",
+      "img": "/migrated/experience-sicily.png",
+      "link": "experience-sicily"
+    },
+    {
+      "id": "experience-brazil-volunteer-teaching-experience",
+      "name": "Volunteering Activity in Brazil: A Transformative Educational Journey",
+      "type": "passion",
+      "val": 10,
+      "desc": "Three weeks of life-changing volunteer work in Brazil teaching children in favelas and disadvantaged communities. An authentic story of social impact, cultural exchange, and personal growth through education projects in Recife, João Pessoa, and Itapororoca.",
+      "img": "/migrated/experience-brazil-volunteer-teaching-experience.jpg",
+      "link": "experience-brazil-volunteer-teaching-experience"
+    },
+    {
+      "id": "experience-mazza",
+      "name": "Don Mazza College",
+      "type": "passion",
+      "val": 10,
+      "desc": "to do",
+      "img": "/migrated/experience-mazza.png",
+      "link": "experience-mazza"
+    },
+    {
+      "id": "experience-21th-birthday",
+      "name": "21th birth Day in Brazil",
+      "type": "passion",
+      "val": 10,
+      "desc": "An awensome experience that changed and teached me a lot",
+      "img": "/migrated/experience-21th-birthday.JPG",
+      "link": "experience-21th-birthday"
+    },
+    {
+      "id": "experience-basket-in-carrozzina",
+      "name": "Wheelchair Basketball",
+      "type": "passion",
+      "val": 10,
+      "desc": "Con Olympic Basket Verona",
+      "img": "/migrated/experience-basket-in-carrozzina.jpg",
+      "link": "experience-basket-in-carrozzina"
+    },
+    {
+      "id": "experience-fortran",
+      "name": "CINECA FORTRAN COURSE",
+      "type": "passion",
+      "val": 10,
+      "desc": "An awensome experience that changed and teached me a lot",
+      "img": "/migrated/experience-fortran.png",
+      "link": "experience-fortran"
+    },
+    {
+      "id": "cat-thought",
+      "name": "Thought",
+      "type": "thought",
+      "val": 20,
+      "desc": "Collection of thought"
+    },
+    {
+      "id": "cat-publication",
+      "name": "Publication",
+      "type": "publication",
+      "val": 20,
+      "desc": "Collection of publication"
+    },
+    {
+      "id": "cat-tech-project",
+      "name": "Tech-project",
+      "type": "tech-project",
+      "val": 20,
+      "desc": "Collection of tech-project"
+    },
+    {
+      "id": "cat-project",
+      "name": "Project",
+      "type": "project",
+      "val": 20,
+      "desc": "Collection of project"
+    },
+    {
+      "id": "cat-books",
+      "name": "Books",
+      "type": "book",
+      "val": 20,
+      "desc": "Collection of books"
+    },
+    {
+      "id": "cat-experience",
+      "name": "Experience",
+      "type": "passion",
+      "val": 20,
+      "desc": "Collection of experience"
+    },
+    {
+      "id": "me",
+      "name": "Simone Mattioli",
+      "type": "me",
+      "val": 30,
+      "desc": "Computer Science Student, AI Enthusiast, Volunteer."
+    }
+  ],
+  "links": [
+    {
+      "source": "cat-thought",
+      "target": "thought-relationship"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-alone"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-repetition"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-trap"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-ignorance-today"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-humility"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-love"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-gratitude"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-history"
+    },
+    {
+      "source": "cat-publication",
+      "target": "publication-llm-tourism-mobility-predictor"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-youtube-video-localization-script"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-cassioli"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-textconverter-pro"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-network-programming-security-course"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-programming-languages-implementation"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-java-car-configurator"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-epicure-hackathon-2024"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-rabbi-ebike-management-system"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-degree"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-ethereum-smart-contract-points"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-ciacola-bot"
+    },
+    {
+      "source": "cat-thought",
+      "target": "thought-trap"
+    },
+    {
+      "source": "cat-project",
+      "target": "project-home"
+    },
+    {
+      "source": "cat-project",
+      "target": "project-mountain-fauna-lover"
+    },
+    {
+      "source": "cat-project",
+      "target": "project-think"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-think"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-cassioli-ventro-contro"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-cassioli-cuore-a-vedere"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-grow-rich"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-gratteri"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-bias-cognitivi"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-mente-guadagna"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-pensieri-lenti-pensieri-veloci"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-machina-sapiens"
+    },
+    {
+      "source": "cat-books",
+      "target": "books-atomic-habits"
+    },
+    {
+      "source": "cat-tech-project",
+      "target": "tech-project-lobable-vibe-coding"
+    },
+    {
+      "source": "cat-experience",
+      "target": "experience-frassino"
+    },
+    {
+      "source": "cat-experience",
+      "target": "experience-sicily"
+    },
+    {
+      "source": "cat-experience",
+      "target": "experience-brazil-volunteer-teaching-experience"
+    },
+    {
+      "source": "cat-experience",
+      "target": "experience-mazza"
+    },
+    {
+      "source": "cat-experience",
+      "target": "experience-21th-birthday"
+    },
+    {
+      "source": "cat-experience",
+      "target": "experience-basket-in-carrozzina"
+    },
+    {
+      "source": "cat-experience",
+      "target": "experience-fortran"
+    },
+    {
+      "source": "me",
+      "target": "cat-thought"
+    },
+    {
+      "source": "me",
+      "target": "cat-publication"
+    },
+    {
+      "source": "me",
+      "target": "cat-tech-project"
+    },
+    {
+      "source": "me",
+      "target": "cat-project"
+    },
+    {
+      "source": "me",
+      "target": "cat-books"
+    },
+    {
+      "source": "me",
+      "target": "cat-experience"
+    }
+  ]
+}

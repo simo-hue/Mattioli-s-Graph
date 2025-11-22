@@ -123,7 +123,7 @@ function mapCategoryToType(cat: string): string {
         'project': 'project',
         'tech-project': 'tech-project',
         'thought': 'thought',
-        'experience': 'passion', // Map experience to passion or create new type? Let's use passion for now or 'thought'
+        'experience': 'experience',
         'publication': 'publication'
     };
     return map[cat] || 'thought';

@@ -10,14 +10,14 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 // Color mapping for different node types
 const getNodeColor = (type: string) => {
     switch (type) {
-        case 'me': return '#ff0055'; // Pink/Red for self
-        case 'passion': return '#ff9900'; // Orange
-        case 'book': return '#00ccff'; // Cyan
-        case 'project': return '#00ff99'; // Green
-        case 'tech-project': return '#aa00ff'; // Purple
-        case 'thought': return '#ffff00'; // Yellow
-        case 'publication': return '#ffffff'; // White
-        default: return '#cccccc';
+        case 'me': return '#ffffff'; // White core
+        case 'passion': return '#ff0055'; // Neon Red/Pink
+        case 'book': return '#00ffff'; // Neon Cyan
+        case 'project': return '#ccff00'; // Neon Green
+        case 'tech-project': return '#bd00ff'; // Neon Purple
+        case 'thought': return '#ffff00'; // Neon Yellow
+        case 'publication': return '#00ff99'; // Mint Green
+        default: return '#444444';
     }
 };
 
@@ -46,31 +46,31 @@ export default function Graph3D() {
 
     useEffect(() => {
         if (fgRef.current) {
-            // Bloom Effect
+            // Bloom Effect - Stronger for Neon look
             const bloomPass = new UnrealBloomPass(
                 new THREE.Vector2(window.innerWidth, window.innerHeight),
-                1.5, // strength
-                0.4, // radius
-                0.85 // threshold
+                2.0, // strength (increased)
+                0.5, // radius
+                0.7  // threshold (lowered to catch more glow)
             );
             fgRef.current.postProcessingComposer().addPass(bloomPass);
 
             // Star Field Background
             const scene = fgRef.current.scene();
             const starsGeometry = new THREE.BufferGeometry();
-            const starsCount = 1500;
+            const starsCount = 2000;
             const posArray = new Float32Array(starsCount * 3);
 
             for (let i = 0; i < starsCount * 3; i++) {
-                posArray[i] = (Math.random() - 0.5) * 2000; // Spread stars far out
+                posArray[i] = (Math.random() - 0.5) * 2500; // Spread stars far out
             }
 
             starsGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
             const starsMaterial = new THREE.PointsMaterial({
-                size: 2,
-                color: 0xffffff,
+                size: 1.5,
+                color: 0x888888, // Dimmer stars to let nodes pop
                 transparent: true,
-                opacity: 0.8,
+                opacity: 0.6,
             });
 
             const starMesh = new THREE.Points(starsGeometry, starsMaterial);
@@ -88,21 +88,22 @@ export default function Graph3D() {
                 nodeVal="val"
 
                 // Visuals
-                backgroundColor="#000005" // Very dark blue/black
-                linkColor={() => '#ffffff'}
-                linkWidth={0.5}
-                linkOpacity={0.2}
+                backgroundColor="#050505" // Deep Black
+                linkColor={() => '#333333'} // Very subtle links
+                linkWidth={0.3}
+                linkOpacity={0.3}
                 nodeResolution={32}
+                nodeOpacity={0.9}
 
                 // Interaction
                 onNodeClick={handleNodeClick}
                 onBackgroundClick={handleBackgroundClick}
 
                 // Particles
-                linkDirectionalParticles={2}
-                linkDirectionalParticleWidth={2}
-                linkDirectionalParticleSpeed={0.005}
-                linkDirectionalParticleColor={() => '#ffffff'}
+                linkDirectionalParticles={1}
+                linkDirectionalParticleWidth={1.5}
+                linkDirectionalParticleSpeed={0.003}
+                linkDirectionalParticleColor={() => '#ccff00'} // Neon Green particles
             />
 
             <Overlay

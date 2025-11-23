@@ -11,7 +11,7 @@ const Graph3D = dynamic(() => import('@/components/Graph3D'), {
 
 export default function Home() {
   return (
-    <main className="w-full h-screen bg-black relative">
+    <main className="w-full h-screen bg-black relative overflow-hidden">
       <div className="absolute top-5 left-5 z-10 text-white pointer-events-none">
         <h1 className="text-4xl font-bold tracking-tighter">SIMONE MATTIOLI</h1>
         <p className="text-gray-400">Digital Garden & Knowledge Graph</p>

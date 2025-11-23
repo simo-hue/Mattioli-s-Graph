@@ -18,8 +18,7 @@
 body {
   color: var(--foreground);
   background-color: var(--background);
-  overflow: hidden;
-  /* Prevent scroll on the main graph view */
+  /* overflow: hidden; Removed to allow scrolling on content pages */
   font-family: var(--font-sans);
 }
 

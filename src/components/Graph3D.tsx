@@ -58,9 +58,9 @@ export default function Graph3D() {
             // 2. Bloom Effect - Minimal and precise
             const bloomPass = new UnrealBloomPass(
                 new THREE.Vector2(window.innerWidth, window.innerHeight),
-                0.4,  // strength (Much lower)
-                0.1,  // radius (Tighter)
-                0.9   // threshold (Only very bright things glow)
+                0.2,  // strength (Even lower)
+                0.1,  // radius
+                0.95  // threshold (Only extremely bright highlights glow)
             );
             fgRef.current.postProcessingComposer().addPass(bloomPass);
 
@@ -85,10 +85,10 @@ export default function Graph3D() {
             scene.add(starMesh);
 
             // 4. Lighting - Balanced
-            const ambientLight = new THREE.AmbientLight(0xffffff, 0.2); // Low ambient
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.3); // Low ambient
             scene.add(ambientLight);
 
-            const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+            const dirLight = new THREE.DirectionalLight(0xffffff, 0.5);
             dirLight.position.set(5, 10, 7);
             scene.add(dirLight);
         }
@@ -96,45 +96,32 @@ export default function Graph3D() {
 
     // Custom Node Object
     const nodeThreeObject = useCallback((node: any) => {
-        // 1. CLOUDS for Thoughts - Ethereal and soft
+        // 1. CLOUDS for Thoughts - Additive Blending
         if (node.type === 'thought') {
-            const canvas = document.createElement('canvas');
-            canvas.width = 128;
-            canvas.height = 128;
-            const context = canvas.getContext('2d');
-            if (context) {
-                // Soft cloud texture generation
-                const gradient = context.createRadialGradient(64, 64, 0, 64, 64, 64);
-                gradient.addColorStop(0, 'rgba(255,255,255,0.15)'); // Very transparent center
-                gradient.addColorStop(0.4, 'rgba(255,255,255,0.05)');
-                gradient.addColorStop(1, 'rgba(255,255,255,0)');
-                context.fillStyle = gradient;
-                context.fillRect(0, 0, 128, 128);
-            }
-            const texture = new THREE.CanvasTexture(canvas);
+            const texture = textureLoader.load('/cloud.png');
             const material = new THREE.SpriteMaterial({
                 map: texture,
                 transparent: true,
-                opacity: 0.6,
-                depthWrite: false, // Don't block other objects
-                blending: THREE.AdditiveBlending
+                opacity: 0.8,
+                blending: THREE.AdditiveBlending, // Black becomes transparent
+                depthWrite: false
             });
             const sprite = new THREE.Sprite(material);
             sprite.scale.set(24, 24, 1);
             return sprite;
         }
 
-        // 2. BUBBLES for Experiences - Clean glass
+        // 2. BUBBLES for Experiences - Softer reflections
         if (node.type === 'experience') {
             const geometry = new THREE.SphereGeometry(5, 64, 64);
             const material = new THREE.MeshPhysicalMaterial({
                 color: 0xffffff,
                 metalness: 0.1,
-                roughness: 0.05,
+                roughness: 0.1, // Slightly rougher to spread light
                 transmission: 0.95,
                 thickness: 0.5,
-                clearcoat: 1,
-                clearcoatRoughness: 0,
+                clearcoat: 0.8, // Reduced clearcoat
+                clearcoatRoughness: 0.2, // Softer highlight
                 ior: 1.4,
                 transparent: true,
                 opacity: 1,
@@ -143,7 +130,7 @@ export default function Graph3D() {
             return new THREE.Mesh(geometry, material);
         }
 
-        // 3. GLOSSY SPHERES for others - Premium look
+        // 3. GLOSSY SPHERES for others - Softer highlights
         const geometry = new THREE.SphereGeometry(4, 64, 64);
         let material;
 
@@ -154,21 +141,20 @@ export default function Graph3D() {
                 map: texture,
                 color: 0xffffff,
                 metalness: 0.1,
-                roughness: 0.3,
-                clearcoat: 0.8,
-                clearcoatRoughness: 0.2,
+                roughness: 0.4, // Increased roughness
+                clearcoat: 0.5, // Reduced clearcoat
+                clearcoatRoughness: 0.4, // Much softer highlight (no spike)
                 envMapIntensity: 0.8
             });
         } else {
             const color = getNodeColor(node.type);
             material = new THREE.MeshPhysicalMaterial({
                 color: color,
-                metalness: 0.4,
-                roughness: 0.4,
-                clearcoat: 0.5,
-                clearcoatRoughness: 0.2,
-                // Removed emissive to prevent glowing blob effect
-                envMapIntensity: 0.6
+                metalness: 0.2,
+                roughness: 0.5, // Matte-like finish
+                clearcoat: 0.3, // Very subtle gloss
+                clearcoatRoughness: 0.4,
+                envMapIntensity: 0.5
             });
         }
 
